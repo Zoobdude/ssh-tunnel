@@ -1,0 +1,12 @@
+services:
+  autossh:
+    image: zoobdude/ssh-tunnel
+    network_mode: host
+    volumes:
+      - ./config/:/ssh/config/
+
+    environment:
+      - SSH_CONFIG_FILE=sshconfig
+      - SSH_KEY_FILE=keyfile
+      - HOSTNAME=server
+    restart: unless-stopped
