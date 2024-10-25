@@ -7,6 +7,6 @@ services:
 
     environment:
       - SSH_CONFIG_FILE=sshconfig
-      - SSH_KEY_FILE=keyfile
-      - HOSTNAME=server
+      - SSH_KEY_FILE=private_key
+      - HOSTNAME=SSH-Tunnel
     restart: unless-stopped

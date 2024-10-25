@@ -1,0 +1,6 @@
+Host SSH-Tunnel
+    Hostname {IP_ADD}
+    User {USER}
+    RemoteForward  {REMOTEPORT} localhost:{LOCALPORT}
+    ServerAliveInterval 90
+    ServerAliveCountMax 3
