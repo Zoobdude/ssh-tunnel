@@ -1,4 +1,8 @@
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Zoobdude/ssh-tunnel/build.yml)
+
 # SSH Tunnel Docker Container
+
+This is a basic alpine based Docker container that runs auto-ssh. Built using GH actions to [Docker Hub](https://hub.docker.com/r/zoobdude/ssh-tunnel)
 
 I wanted to expose a local service on my RPI to the internet using an ssh tunnel to a VPS.
 
