@@ -22,4 +22,4 @@ COPY --from=builder /autossh/autossh /ssh/autossh
 
 WORKDIR /ssh
 
-CMD sh -c './autossh -M 0 -o StrictHostKeyChecking=no -N -F /ssh/config/$SSH_CONFIG_FILE -o "IdentityFile=/ssh/config/$SSH_KEY_FILE" $HOSTNAME'
+CMD sh -c './autossh -M 0 -o StrictHostKeyChecking=no -o ExitOnForwardFailure=yes -N -F /ssh/config/$SSH_CONFIG_FILE -o "IdentityFile=/ssh/config/$SSH_KEY_FILE" $HOSTNAME'
